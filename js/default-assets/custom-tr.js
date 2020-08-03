@@ -1,7 +1,12 @@
 
 $(document).on('ready', function() {
 	new WOW().init();
-      
+      $(".map-slider").slick({
+        lazyLoad: 'ondemand',
+      /*  infinite: true,*/
+        prevArrow:"<span class='prev'></span>",
+        nextArrow:"<span class='next'></span>",
+      });
       $(".regular").slick({
         dots: true,
         infinite: true,

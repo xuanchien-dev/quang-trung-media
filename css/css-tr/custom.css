@@ -332,10 +332,15 @@ test*/
   display: inline-block;
   width: 100%;
 }
+.silder-detai-product .slider-for .img{
+    height:370px;
+   
+}
 .silder-detai-product .slider-for .img,
 .silder-detai-product  .slider-nav .img{
   float:left;
   border: 1px solid #E9E9E9;
+
 }
 .silder-detai-product .slider-for .img img,
 .silder-detai-product .slider-nav .img img{
@@ -373,6 +378,5 @@ test*/
   left: 50%;
   transform: translate(-50%, 0%);
 }
-.popup-thongso{
 
-}
+  
