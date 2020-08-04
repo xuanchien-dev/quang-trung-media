@@ -1140,6 +1140,7 @@ table tr td:nth-child(3) {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  border: none;
 }
 
 .faq-page .accordion {
@@ -2008,14 +2009,12 @@ table tr td:nth-child(3) {
 .slider .slick-slide .img .content {
   display: none;
   position: absolute;
-  top: 0;
   color: #fff;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   top: 50%;
 }
 .slider .slick-slide .img .content a {
@@ -2049,6 +2048,7 @@ table tr td:nth-child(3) {
 }
 .slider .slick-slide .img:hover .content {
   display: block;
+  text-align: center;
 }
 .slider img {
   width: 100%;
@@ -3998,7 +3998,7 @@ table tr td:nth-child(3) {
 }
 .maps-slider-acount .container {
   position: absolute;
-  top: 6%;
+  top: 2%;
   left: 380px;
 }
 
