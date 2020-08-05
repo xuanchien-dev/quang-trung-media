@@ -687,9 +687,11 @@ body{
 	color: #000000;
 	margin: 10px 0px;
 	height: unset;
+	display: flex;
 }
 .item_news .text p.time img{
 	margin-right: 10px;
+	width: 17px;
 }
 .item_news .text a.more_v{
 	font-size: 14px;

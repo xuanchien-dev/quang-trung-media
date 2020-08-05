@@ -251,6 +251,7 @@ body{
 }
 .ns-breadcrumb .active {
   color: #318124;
+  background: transparent;
 }
 
 .info-form {
@@ -5437,8 +5438,7 @@ table tr td:nth-child(3) {
 }
 .themvaogio-btn:before {
   position: absolute;
-  content: "";
-  font-family: fontawesome;
+  content: url(../../img/cartt.png);
   left: 30px;
 }
 
@@ -5835,6 +5835,8 @@ table tr td:nth-child(3) {
 .review-right {
   margin-top: 30px;
   margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
 }
 .review-right .evaluation {
   width: 100%;

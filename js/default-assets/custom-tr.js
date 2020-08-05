@@ -99,6 +99,20 @@ $(document).on('ready', function() {
     /*$(".menu-mobile").click(function(){
       $(this).remove(".menu-mobile-active");
     });*/
-
+    $(".slider-new-mobile").slick({
+        lazyLoad: 'ondemand',
+      /*  infinite: true,*/
+        prevArrow:"<span class='prev'></span>",
+        nextArrow:"<span class='next'></span>",
+      });
+    $(".th").click(function () {
+          $(".checkbox-th").fadeToggle("slow");
+      });
+    $(".gb").click(function () {
+          $(".checkbox-gb").fadeToggle("slow");
+      });
+    $(".nxs").click(function () {
+          $(".checkbox-nxs").fadeToggle("slow");
+      });
   
 });

@@ -8,5 +8,184 @@
   body{
     background: #E5E5E5 !important;
   }
+  .list_product .item_product .text .star{
+  	display: none;
+  }
+   .list_product .item_product .text .add_cart{
+  	display: none;
+  }
+  .sock-reponsive{
+  	width: 225px;
+  }
+  .like_page{
+  	background: #E5E5E5;
+  }
+  .slick_nav .owl-nav{
+  	display: none;
+  }
+  .video_main{
+  	padding: 0 !important;
+  }
+  .qc{
+  	margin-bottom: 15px !important;
+  }
+  .news_main {
+    margin: 15px 0px !important;
+	}
+    .bh{
+    	margin-top:0 !important;
+    }
+    .list_news{
+    	padding-bottom: 0 !important;
+    }
+    .vequangtrung{
+    	padding: 0;
+    	margin-top: 25px;
+    }
+    .footer-item{
+    	padding-top:0 !important;
+    }
+    .list-footer-1 .icon i{
+    	width: auto;
+    	margin-right: 20px;
+    }
+  	.button-2{
+  		display: inline-block !important;
+  	}
+  	.muangay-btn,.themvaogio-btn{
+  		width: 100%;
+  		margin-left: 0;
+  		margin-right: 0;
+  		margin-top: 3px;
+  		margin-bottom: 4px;
+  	}
+  	.themvaogio-btn:before{
+  		left: 95px;
+    	top: 6px;
+  	}
+  	.pro-detail-7 .lienhe-page7 {
+	    text-align: center;
+	}
+	.form-support{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.list_product .item_product{
+		border: 1px solid #e9e9e9 !important;
+	}
+	.comment-user .cmt-text{
+		width: 87%;
+	}
+	.detail-rate-title .rate-title {
+	    display: block;
+	}
+	.detail-rate-title .rate-title .danhgia{
+		display: flex;
+	}
+	.rate-title{
+		padding: 0;
+	}
+	.button-7{
+		padding-top:29px;
+		padding-left: 0;
+		padding-right:0;
+		padding-bottom: 0;
+	}
+	.detail-rate-title .btn-like{
+		background: #2B62D1;
+	    border-radius: 5px;
+	    margin-left: 0px;
+	    position: relative;
+	    padding-left: 23px;
+	    padding-right: 5px;
+	    color: #fff;
+	    font-style: normal;
+	    padding-top: 1px;
+	    padding-bottom: 2px;
+	    font-size: 11px;
+	}
+	.detail-rate-title .btn-like:before {
+	    position: absolute;
+	    content: url(../../img/likemini.png);
+	    left: 5px;
+	}
+	.detail-rate-title .btn-share{
+		background: #2B62D1;
+	    border-radius: 5px;
+	    position: relative;
+	    padding-left: 23px;
+	    padding-right: 5px;
+	    margin-left: 8px;
+	    color: #fff;
+	    font-style: normal;
+	    padding-top: 1px;
+	    padding-bottom: 2px;
+	    font-size: 11px;
+	}
+	.detail-rate-title .btn-share:before {
+	    position: absolute;
+	    content: url(../../img/sharemini.png);
+	    left: 5px;
+	}
+	.item-info-7{
+		background: #fff;
+		border-top: 1px solid #C4C4C4;
+	}
+	.item-info-7 .title-info p{
+		margin-top:0;
+	}
+	.link-section .show-item{
+		padding-left: 15px;
+	}
+	.lienhe-page7 p{
+		margin-top: 5px;
+	}
+	.date-item-grid-1{
+		display: inherit;
+    	text-align: center;
+	}
+	.review-left{
+	  text-align: left;
+	  margin-top:10px;
+	  margin-bottom: 5px;
+	}
+	.review-right {
+		margin-top:5px;
+		margin-bottom: 5px;
+	}
+	.review-right .evaluation .eval-index img{
+		margin-left: 0;
+	}
+	.post-style-3{
+		margin-top:0px;
+	}
+	.item_page h3{
+		margin-bottom: 10px !important;
+	}
+	.item_page{
+		margin-bottom: 15px !important;
+	}
+	.detail-pro-page7{
+		background:#fff;
+		padding-top:10px;
+	}
+	.detail-product{
+		background:#fff;
+	}
+	.cate_product {
+	    margin-bottom: 0px !important;
+	}
+	.review-product-7{
+		margin-top: 15px;
+		background: #fff;
+	}
+	.comment-page{
+		background:#fff;
+		padding-bottom: 30px;
+	}
+	.detail-pr-right{
+		background: #fff;
+	}
 }
+
 
