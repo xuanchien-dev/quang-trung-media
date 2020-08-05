@@ -1,5 +1,12 @@
-@media screen and ( max-width: 576px){
-	.slider{
-		overflow: hidden;
-	}
+@media screen and (max-width: 576px) {
+  .slider {
+    overflow: hidden;
+  }
+  .main_s{
+  	display: none;
+  }
+  body{
+    background: #E5E5E5 !important;
+  }
 }
+

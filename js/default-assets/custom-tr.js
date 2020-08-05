@@ -1,6 +1,7 @@
 
 $(document).on('ready', function() {
 	new WOW().init();
+
       $(".map-slider").slick({
         lazyLoad: 'ondemand',
       /*  infinite: true,*/
@@ -89,5 +90,15 @@ $(document).on('ready', function() {
       focusOnSelect: true,
       autoplay: false,
     });
+    $(".humburger").click(function () {
+          $(".list-menu-mobile").fadeToggle("slow");
+      });
+    $(".menu-mobile").click(function(){
+      $(this).addClass("menu-mobile-active");
+    });
+    /*$(".menu-mobile").click(function(){
+      $(this).remove(".menu-mobile-active");
+    });*/
 
+  
 });

@@ -465,7 +465,6 @@ body{
 	position: absolute;
 	top: 15px;
 	right: 5px;
-	z-index: 99;
 }
 .item_product .img .out_stock{
 	width: 79px;

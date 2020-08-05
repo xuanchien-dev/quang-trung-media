@@ -1,97 +1,330 @@
-.video-page-12-style-2{
-  padding-left: 15px;
-  .item_video{
-    width: 100%;
-    overflow: hidden;
-    border-bottom: 1px solid #EBEBEB;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    .img{
-      width: 40%;
-      float:left;
-      padding:15%;
-      .play_run{
-        span{
-          width: 24px;
-          height:24px;
-          line-height: 23px;
-          .ping{
-            top: -52%;
-            left: -52%;
-            transform: translate(-0%, -50%);
-          }
-          .ring{
-            padding: 25px;
-          }
-        }
+.header-mobile{
+  position: fixed;
+  width: 100%;
+  padding-top:10px;
+  padding-bottom: 10px;
+  z-index: 6;
+  background-color: #fff;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.17);
+}
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  padding-left:12px;
+  padding-right: 12px;
+  .menu-mobile{
+    .humburger{
+      span{
+        display: block;
+        width: 20px;
+        height: 3px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        background: #318124;
       }
     }
-    .box-content-video{
-      width: 60%;
-      float:left;
-      padding-left: 15px;
-      h5{
-        font-size: 14px;
-        font-weight: normal;
-      }
-      .date-item-grid p span{
-        position: relative;
-        &:before{
-          left:0px;
+  }
+  .menu-mobile-active{
+    .humburger{
+      span{
+        &:last-child{
+          width: 15px;
         }
       }
     }
   }
-}
-/* POPUP CHI TIET SAN PHAM */
-.popup{
-  position: fixed;
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-   background: rgba(0,0,0,0.6);
-   display: none;
-   z-index: 100;
-   .popup-content{
-     width: 600px;
-     height: 600px;
-     background: #bbb;
-     margin: 100px auto;
-     position: relative;
-     border: 5px solid #fff;
-     .techni-item{
-      
+  .logo-mobile{
+    overflow: hidden;
+    width: 135px;
+    img{
+      width: 100%;
     }
-}
-.close {
-         position: absolute;
-         top: 5px;
-         right: 5px;
-         border-radius: 50%;
-         background: #222;
-         border: 3px solid #fff;
-         color: #fff;
-         text-decoration: none;
-         line-height: 0;
-         padding: 9px 0 11px;
-         width: 20px;
-         text-align: center;
-        }
-     }
-.popup:target {
-  display: block;
-}
-.wrapper {
- max-width: 960px;
- margin: 10% auto;
- text-align: center;
-a{
-  width: 100%;
-  height:100%;
-}
+  }
+  .cart-icon{
+    width: 24px;
+    height: 24px;
+    a{
+      position: relative;
+      span{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: #ff0000;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        color: #fff;
+        line-height: normal;
+        text-align: center;
+        top: -9px;
+        right: -7px;
+        line-height: 18px;
+        font-size: 10px;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
 
 }
-/* POPUP CHI TIET SAN PHAM */
+.search-mobile{
+  margin-top:10px;
+  position: relative;
+  padding-left:12px;
+  padding-right: 12px;
+  input{
+    width: 100%;
+    border: 1px solid #318124;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    &::placeholder{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #949494;
+    }
+  }
+  a{
+    position: absolute;
+    right: 10px;
+    top: -3px;
+  }
+}
+.list-menu-mobile{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color:#fff;
+  padding-left:12px;
+  padding-right:12px;
+  width: 100%;
+  height: 500px;
+  overflow: scroll;
+  padding-bottom: 15px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.17);
+    .list-category{
+      padding-left: 0;
+      padding-right: 0;
+      ul{
+        padding-left: 0;
+        border-bottom: 1px solid #E9E9E9;
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        margin-bottom: 0;
+        li{
+          list-style: none;
+          margin-top: 7.5px;
+          margin-bottom: 7.5px;
+          a{
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            &:hover{
+              span{
+                color: #318124;
+                font-weight: bold;
+              }
+              .hover{
+                display: block;
+              }
+              img{
+                display: none;
+              }
+            }
+            .hover{
+              display: none;
+            }
+            img{
+             width: 26px;
+            }
+            span{
+              margin-left: 20px;
+              font-size: 14px;
+              color: #1C1C1C;
+            }
+          }
+        }
+      }
+    }
+    .online_left{
+      .online{
+        float:left;
+      }
+    }
+  }
+
+.info-acc-mobile{
+  width: 100%;
+  margin-top: 10px;
+  .name-acc{
+    .img{
+      width: 36px;
+      height:auto;
+      a{
+        padding: 0;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .name{
+      padding-top:0px;
+      a{
+        padding: 0;
+        display: block;
+        margin: 0;
+      }
+    }
+  }
+  .list-1{
+    margin-top: 0;
+    li{
+      padding-left: 5px;
+    }
+  }
+}
+.hotline-mobile{
+  display: flex;
+  align-items: center;
+  p{
+    
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #ff0000;
+    margin-right: 10px;
+    span{
+      width: 100%;
+      display: block;
+      text-align: left;
+    }
+    a{
+      color: #ff0000;
+      font-weight: 600;
+    }
+  }
+}
+.banner-mobile{
+  padding-top: 80px;
+  position: relative;
+  img{
+    width: 100%;
+  }
+}
+.grid-1-mobile{
+  background: #FFFFFF;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  position: absolute;
+  top: 95%;
+  display: inline-block;
+  width: 95%;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 2.5%;
+  .item{
+    text-align: center;
+    padding: 0 7.5px;
+    img{
+      width: 20px;
+    }
+    span{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+}
+
+.product-hot-mobile{
+  background-image: none !important;
+  padding-top: 45px !important;
+  margin-bottom: 15px !important;
+  padding-bottom: 0 !important;
+  .title-color-mb{
+    margin-top: 25px;
+    h2{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 21px;
+      color: #318124;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+.title-default-mobile{
+  width: 100%;
+  h2{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      text-transform: uppercase;
+    }
+    
+  }
+}
+.option-choose{
+    display: flex;
+    justify-content: space-between;
+    .active{
+      background: #318124;
+      color:#fff;
+    }
+    a{
+    background: #C5E6C0;
+    border-radius: 3px;
+    color: #318124;
+    width: 30%;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    &:hover{
+      background: #318124;
+      color:#fff;
+    }
+  }
+    
+}
+.list-product-mobile{
+  margin-top: 15px;
+  .item_product{
+    .text{
+      .star{
+        display: none;
+      }
+      .add_cart{
+        display: none;
+      }
+    }
+  }
+}
+.title-video-mobile{
+  h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000; 
+  }
+  
+}
+.video-item-mobile{
+  background: #E5E5E5 !important;
+}

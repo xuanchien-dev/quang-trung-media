@@ -6115,7 +6115,103 @@ line-height: 19px;
     }
   }
 }
+.video-page-12-style-2{
+  padding-left: 15px;
+  .item_video{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #EBEBEB;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    .img{
+      width: 40%;
+      float:left;
+      padding:15%;
+      .play_run{
+        span{
+          width: 24px;
+          height:24px;
+          line-height: 23px;
+          .ping{
+            top: -52%;
+            left: -52%;
+            transform: translate(-0%, -50%);
+          }
+          .ring{
+            padding: 25px;
+          }
+        }
+      }
+    }
+    .box-content-video{
+      width: 60%;
+      float:left;
+      padding-left: 15px;
+      h5{
+        font-size: 14px;
+        font-weight: normal;
+      }
+      .date-item-grid p span{
+        position: relative;
+        &:before{
+          left:0px;
+        }
+      }
+    }
+  }
+}
+/* POPUP CHI TIET SAN PHAM */
+.popup{
+  position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: rgba(0,0,0,0.6);
+   display: none;
+   z-index: 100;
+   .popup-content{
+     width: 600px;
+     height: 600px;
+     background: #bbb;
+     margin: 100px auto;
+     position: relative;
+     border: 5px solid #fff;
+     .techni-item{
+      
+    }
+}
+.close {
+         position: absolute;
+         top: 5px;
+         right: 5px;
+         border-radius: 50%;
+         background: #222;
+         border: 3px solid #fff;
+         color: #fff;
+         text-decoration: none;
+         line-height: 0;
+         padding: 9px 0 11px;
+         width: 20px;
+         text-align: center;
+        }
+     }
+.popup:target {
+  display: block;
+}
+.wrapper {
+ max-width: 960px;
+ margin: 10% auto;
+ text-align: center;
+a{
+  width: 100%;
+  height:100%;
+}
 
+}
+/* POPUP CHI TIET SAN PHAM */
 
 
 
