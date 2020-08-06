@@ -112,5 +112,55 @@ $(document).on('ready', function() {
     $(".nxs").click(function () {
           $(".checkbox-nxs").fadeToggle("slow");
       });
-  
+
+    /* menu co dinh */
+    jQuery(document).ready(function($) {
+            var $filter = $('.header-mobile');
+            var $filterSpacer = $('<div />', {
+                "class": "vnkings-spacer",
+                "height": $filter.outerHeight()
+            });
+            if ($filter.size())
+            {
+                $(window).scroll(function ()
+                {
+                    if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top)
+                    {
+                        $filter.before($filterSpacer);
+                        $filter.addClass("fix");
+                    }
+                    else if ($filter.hasClass('fix')  && $(window).scrollTop() < $filterSpacer.offset().top)
+                    {
+                        $filter.removeClass("fix");
+                        $filterSpacer.remove();
+                    }
+                });
+            }
+ 
+        });
+    /*jQuery(document).ready(function($) {
+            var $filter = $('header');
+            var $filterSpacer = $('<div />', {
+                "class": "vnkings-spacer",
+                "height": $filter.outerHeight()
+            });
+            if ($filter.size())
+            {
+                $(window).scroll(function ()
+                {
+                    if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top)
+                    {
+                        $filter.before($filterSpacer);
+                        $filter.addClass("fix");
+                    }
+                    else if ($filter.hasClass('fix')  && $(window).scrollTop() < $filterSpacer.offset().top)
+                    {
+                        $filter.removeClass("fix");
+                        $filterSpacer.remove();
+                    }
+                });
+            }
+ 
+        });*/
+
 });

@@ -2,6 +2,9 @@ body{
 	font-family: 'Roboto', sans-serif;
 	/*font-size: 10px;*/
 }
+.header{
+	background-color: #fff;
+}
 .header_top{
 	padding: 15px 0px;
 }

@@ -4762,14 +4762,13 @@ color: #000000;
   box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.25);
 }
 .search-system select {
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 30px;
-  background: #FFFFFF;
-  border-radius: 5px;
-  width: 100%;
-  border: none;
-  height: 100%;
+      padding-top: 17px;
+    padding-bottom: 18px;
+     padding-left: 5px; 
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
 }
 .search-system select:focus {
   outline: 0;
@@ -5968,7 +5967,7 @@ color: #000000;
   margin-top: 30px;
   margin-bottom: 20px;
   display: inline-block;
-  width: 100%;
+  
 }
 .review-right .evaluation {
   width: 100%;
@@ -6508,7 +6507,6 @@ color: #000000;
 /* POPUP CHI TIET SAN PHAM */
 @charset "UTF-8";
 .header-mobile {
-  position: fixed;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -6706,7 +6704,6 @@ color: #000000;
 }
 
 .banner-mobile {
-  padding-top: 80px;
   position: relative;
 }
 .banner-mobile img {
@@ -7512,4 +7509,13 @@ test*/
   transform: translate(-50%, 0%);
 }
 
-  
+.fix {
+  left: 0;
+  max-width: 100%;
+  overflow: visible;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
