@@ -1,3 +1,16 @@
+@media screen and (min-width: 992px){
+	.header-mobile{
+		display: none;
+	}
+}
+@media screen and (max-width: 992px){
+	header{
+		display: none;
+	}
+	.video-page-12 .item_video{
+	  width: 50%;
+	}
+}
 @media screen and (max-width: 576px) {
   .slider {
     overflow: hidden;
@@ -194,6 +207,11 @@
 	}
 	.order-left {
 	  overflow: hidden;
+	  padding-bottom: 20px;
+	}
+	
+	.info-product table tr td p{
+		font-size: 12px;
 	}
 }
 
