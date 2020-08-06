@@ -29,16 +29,14 @@ $(document).on('ready', function() {
     $(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true,
+         dots: true,
         prevArrow:"<span class='prev'></span>",
         nextArrow:"<span class='next'></span>",
       });
     $(".click-item").click(function () {
         $(".show-item").fadeToggle("slow");
     });
-    $(".click-question-item").click(function () {
-        $(".show-question-item").fadeToggle("slow");
-    });
-    
+  
     $('input.input-qty').each(function() {
         var $this = $(this),
             qty = $this.parent().find('.is-form'),

@@ -231,8 +231,8 @@
 }
 .change-pass-3 .password:before{
 	position: absolute;
-    content: url(../../img/lock.png);
-    top: 22px;
+    content: url(../../img/khoa1.png);
+    top: 24px;
     right: 35px;
     font-size: 21px;
     color: #6B6B6B;

@@ -192,6 +192,26 @@
 	.item-info-7 .info-default-7 li:before{
 		top: 5px;
 	}
+	.order-left {
+	  overflow: hidden;
+	}
 }
 
 
+@media screen and (max-width: 1400px){
+	.grid-image-16 .grid-item .column .img-box-grid .text img {
+	    width: 140px;
+	    margin-bottom: 10px;
+	}
+	.grid-image-16 .grid-item .column .img-box-grid .text h4 {
+	    font-size: 30px;
+	}
+	.grid-image-16 .grid-item .column .img-box-grid .text h2 {
+	    font-size: 35px;
+	}
+	.grid-image-16 .grid-item .column .img-box-grid .text p {
+	    font-size: 25px;
+	    margin-top:5px;
+	    margin-bottom: 5px;
+	}
+}
