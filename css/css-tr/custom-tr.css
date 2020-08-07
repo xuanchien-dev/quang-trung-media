@@ -7582,3 +7582,14 @@ test*/
     font-style: normal;
 }
 /* icon footer */
+
+.bh-page20{
+  background-image: none !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+.bh-page20 .form_lh input:first-child{
+    border: 1px solid #BABABA !important;
+    box-sizing: border-box !important;
+    border-radius: 5px !important;
+}
