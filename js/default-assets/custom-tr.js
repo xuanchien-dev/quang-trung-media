@@ -34,7 +34,7 @@ $(document).on('ready', function() {
       });
 
     $(".lazy").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        lazyLoad: 'ondemand', 
         infinite: true,
          dots: true,
         prevArrow:"<span class='prev'></span>",
@@ -85,9 +85,6 @@ $(document).on('ready', function() {
     $(".menu-mobile").click(function(){
       $(this).addClass("menu-mobile-active");
     });
-    /*$(".menu-mobile").click(function(){
-      $(this).remove(".menu-mobile-active");
-    });*/
     $(".slider-new-mobile").slick({
         lazyLoad: 'ondemand',
       /*  infinite: true,*/
@@ -129,30 +126,7 @@ $(document).on('ready', function() {
             }
  
         });
-    /*jQuery(document).ready(function($) {
-            var $filter = $('header');
-            var $filterSpacer = $('<div />', {
-                "class": "vnkings-spacer",
-                "height": $filter.outerHeight()
-            });
-            if ($filter.size())
-            {
-                $(window).scroll(function ()
-                {
-                    if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top)
-                    {
-                        $filter.before($filterSpacer);
-                        $filter.addClass("fix");
-                    }
-                    else if ($filter.hasClass('fix')  && $(window).scrollTop() < $filterSpacer.offset().top)
-                    {
-                        $filter.removeClass("fix");
-                        $filterSpacer.remove();
-                    }
-                });
-            }
- 
-        });*/
+    
 var acc = document.getElementsByClassName("accordion");
     var i;
 

@@ -289,17 +289,9 @@ body{
 .list_cate ul a img{
 	margin-right: 12px;
 	font-weight: 500;
-	width: 26px;
+	width: 24px;
 }
-.list_cate ul a img.hover{
-	display: none;
-}
-.list_cate ul a:hover img{
-	display: none;
-}
-.list_cate ul a:hover img.hover{
-	display: block;
-}
+
 .list_cate ul a i {
 	padding: 0px 10px;
 	font-weight: 600;
@@ -342,6 +334,7 @@ body{
 	right: 0;
 	top: 0;
 	color: #318124;
+	padding-right: 0;
 }
 .list_v2 .item ul li a{
 	margin: 0px;
