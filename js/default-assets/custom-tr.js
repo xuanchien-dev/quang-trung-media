@@ -16,6 +16,13 @@ $(document).on('ready', function() {
         slidesToScroll: 4,
         prevArrow:"<button class='prev slick-prev'><img class='left-arrow ' src='img/left.png'></button>",
         nextArrow:"<button class='next slick-next'><img class='right-arrow ' src='img/right.png'></button>",
+        responsive:[{
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
 
       });
 
@@ -55,23 +62,7 @@ $(document).on('ready', function() {
             $this.attr('value', d).val(d)
         })
     });
-
-    // back to top
-    var mybutton = document.getElementById("myBtn");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-   
-
+    
     $('.slider-for').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -162,5 +153,19 @@ $(document).on('ready', function() {
             }
  
         });*/
+var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    };
 
 });

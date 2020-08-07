@@ -593,7 +593,7 @@ body{
 	align-items: center;
 }
 .item_product  .text .star img{
-	margin: 0px 7px;
+	    margin: 0px 10px 0 1px;
 	margin-top: -3px;
 	width: auto !important;
 }
