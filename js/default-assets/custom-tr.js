@@ -8,6 +8,7 @@ $(document).on('ready', function() {
         prevArrow:"<span class='prev'></span>",
         nextArrow:"<span class='next'></span>",
       });
+
       $(".regular").slick({
         dots: true,
         infinite: true,
@@ -25,6 +26,7 @@ $(document).on('ready', function() {
         }]
 
       });
+
 
     $(".map-slider-footer").slick({
         lazyLoad: 'ondemand',
@@ -124,8 +126,10 @@ $(document).on('ready', function() {
                     }
                 });
             }
+            
  
         });
+
     
 var acc = document.getElementsByClassName("accordion");
     var i;
@@ -141,5 +145,6 @@ var acc = document.getElementsByClassName("accordion");
             }
         });
     };
+
 
 });
