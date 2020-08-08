@@ -11,6 +11,10 @@
 	.header-mobile, .footer-mobile{
 		display: none;
 	}
+	.maps-slider-acount .container {
+		top:6%;
+		left: 21%;
+	}
 }
 @media screen and (max-width: 990px){
 	.header_top, .menu_a_cate, .footer-pc{
@@ -452,7 +456,7 @@
 	    margin-top: 0;
 	}
 	.staff-page{
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 	}
 	.item-right:before {
 	    left: -10px;
@@ -479,7 +483,7 @@
 	}
 	.grid-image-16 .grid-item .column .img-box-grid .text h2,
 	.grid-image-16 .grid-item .column .img-box-grid .text h4{
-		font-size: 8px;
+		font-size: 8px !important;
 	    margin-top: 0;
 	    margin-bottom: 0;
 	}
@@ -493,10 +497,16 @@
 	.colcation-item{
 		display: inherit;
 		padding: 10px 10px 10px 60px;
-		    margin: 7.5px 15px;
+			margin: 7.5px 15px;
+			position: relative;
+	}
+	.colcation-item .btn-location{
+		position: absolute;
+		top: 58%;
+    	right: 3px;
 	}
 	.colcation-item p{
-		margin-top: 5px;
+		margin-top: 0px;
 	}
 	.colcation-item h4{
 		margin-top:0;
@@ -510,6 +520,7 @@
 	}
 	.contact-toby-1 .container .row .mapslider-item .map-slider{
 		width: 100%;
+		margin-top: 10px;
 	}
 	.toby-left{
 		padding-left: 15px;
@@ -715,6 +726,35 @@
 	.new-left{
 		padding-bottom: 0;
 	}
+	.colcation-item p span{
+		margin: 0;
+	}
+	.location{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.list-account{
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 15px;
+	}
+	.contact-toby-1{
+		padding-top: 20px;
+	}
+	.page-about-us{
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+	.pagination{
+		padding-left:50px;
+		padding-right: 50px;
+	}
+	.pagination li{
+		display: none;
+	}
+	.pagination .page-item{
+		display: block;
+	}
 }
 
 
@@ -778,5 +818,5 @@
 	.btn-click-show{
 		height: 46px;
 	}
-
+	
 }
