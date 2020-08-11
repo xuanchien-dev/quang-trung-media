@@ -1,4 +1,4 @@
-/*.masonry { 
+.masonry { 
     display: flex;
     flex-flow: row wrap;
     margin-left: -8px;
@@ -25,9 +25,9 @@
   }
   .grid-item:nth-child(4n+1):nth-child(4n+4) {
     width: 380px;
-  }*/
+  }
 
-  /*
+  
   .masonry { 
     display: flex;
     flex-flow: row wrap;
@@ -37,7 +37,7 @@
   
   .masonry-brick {
     flex: auto;
-    height: 250px;
+    height: auto;
     min-width: 150px;
     margin: 0 8px 8px 0;
     overflow: hidden;
@@ -57,7 +57,7 @@
   }
   .masonry-brick:nth-child(4n+1):nth-child(4n+4) {
     width: 380px;
-  }*/
+  }
   /*
   body {
     display: flex;
@@ -67,7 +67,7 @@
     font-family: sans-serif;
   }
   */
-  /*
+  
  .grid-anh{
   position: relative;
  }
@@ -151,7 +151,7 @@
     text-align: center;
     font-style: italic;
   }
-  */
+  
   /* css popup video */
 .slider-nav-video{
   position: relative;
@@ -335,7 +335,7 @@
 .gridywrap .gridinfo * {
   opacity: 0;
   transition: all 0.8s;
-  color:#fffs;
+  color:#fff;
 }
 
 
@@ -363,4 +363,3 @@
   opacity: 1;
   color:#fff;
 }
-

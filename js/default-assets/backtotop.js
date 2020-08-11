@@ -27,3 +27,7 @@ $('.slider-for-video').slick({
            prevArrow:"<button class='prev slick-prev'><img class='left-arrow ' src='img/images/pv1.png'></button>",
         nextArrow:"<button class='next slick-next'><img class='right-arrow ' src='img/images/nv1.png'></button>",
 });
+
+$(".click-title").click(function(){
+  $(this).addClass("active-click");
+});

@@ -1187,14 +1187,14 @@ table tr td:nth-child(3) {
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 15px;
   background-color: white;
-  max-height: 0;
+  max-height: 100% !important;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  border: none;
+  border: none !important;
 }
-
+/*
 .faq-page .accordion {
   position: relative;
 }
@@ -1234,7 +1234,9 @@ table tr td:nth-child(3) {
   content: url("../../img/faq3.png");
   left: 0;
 }
-
+.faq-page .panel ul li a{
+  color: #000;
+}*/
 .search {
   margin-bottom: 25px;
   position: relative;
@@ -1778,6 +1780,7 @@ table tr td:nth-child(3) {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  word-wrap: break-word;
 }
 .box-qa .item-qa p a:hover {
   text-decoration: none;
@@ -1791,7 +1794,7 @@ table tr td:nth-child(3) {
 .faq-page-default .accordion:focus {
   outline: none;
 }
-.faq-page-default .accordion:first-child span {
+/*.faq-page-default .accordion:first-child span {
   position: absolute;
   content: url("../../img/faq1.png");
   left: 15px;
@@ -1800,12 +1803,13 @@ table tr td:nth-child(3) {
   position: absolute;
   content: url("../../img/gaq2.png");
   left: 15px;
-}
+}*/
 .faq-page-default .panel .text {
-  margin-left: 40px;
   padding-bottom: 10px;
   padding-top: 10px;
   border-top: 2px dotted #318124;
+  margin-top: 10px;
+  display: none;
 }
 .faq-page-default .panel .text i {
   margin-top: 10px;
@@ -1833,16 +1837,90 @@ color: #000000;
     color: #000000;
         margin-top: 10px;
 }
+.faq-page-default .panel ul li:hover{
+  cursor: pointer;
+}
+.faq-page-default .panel ul .active-click{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.faq-page-default .panel ul .active-click .text{
+ display: block;
+}
+.faq-page-default .panel ul .active-click{
+  position: relative;
+}
+.faq-page-default .panel ul .active-click:before{
+  position: absolute;
+  content: url(../../img/active.svg);
+  left: 0;
+}
 .faq-page-default .panel ul li:before {
   position: absolute;
   content: url("../../img/faq3.png");
   left: 0;
 }
 
-.tab-qa .tab-qa-item {
-  float: left;
+.tab-qa{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: row wrap;
 }
 
+.style-tt, .style-default, .style-tt, .style-ddh, .style-ms,
+.style-tthc,.style-vc,.style-qt{
+  position: relative;
+}
+.style-tt span{
+  position: absolute;
+  content: url(../../img/thanhtoan3.svg);
+  left: 15px;
+}
+.style-default span{
+  position: absolute;
+  content: url(../../img/faq1.png);
+  left: 15px;
+}
+.style-tt span{
+  position: absolute;
+  content: url(../../img/thanhtoan3.svg);
+  left: 15px;
+}
+.style-ddh span{
+  position: absolute;
+  content: url(../../img/dondathang.svg);
+  left: 15px;
+}
+.style-ms span{
+  position: absolute;
+  content: url(../../img/cart.png);
+  left: 15px;
+}
+.style-tthc span{
+  position: absolute;
+  content: url(../../img/thutucthanhtoan.svg);
+  left: 15px;
+}
+.style-vc span{
+  position: absolute;
+  content: url(../../img/vc.svg);
+  left: 15px;
+}
+.style-sp span{
+  position: absolute;
+  content: url(../../img/muasam.svg);
+  left: 15px;
+}
+.style-qt span{
+  position: absolute;
+  content: url(../../img/quangtrung.svg);
+  left: 15px;
+}
 .banner-style-gradient {
   width: 100%;
   position: relative;
@@ -2052,7 +2130,9 @@ color: #000000;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.achievements-page-grid .title-dark{
+  margin-bottom: 10%;
+}
 .title-dark {
   text-align: center;
   margin-bottom: 30px;
@@ -4388,6 +4468,7 @@ color: #000000;
   padding: 0 4px;
   width:100%;
 }
+/*
 .grid-image-16 .grid-item .column {
   flex: 33.333333333%;
   max-width: 33.333333333%;
@@ -4445,7 +4526,19 @@ color: #000000;
   border: 1px solid #FFF;
   padding: 3px 22px;
 }
+*/
+.video-page-16 .link-video{
+  width: 100%;
+  height: 100%;
+  box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.19);
+  display: inline-block;
 
+}
+.video-page-16 .link-video iframe{
+  width: 100%;
+ 
+  
+}
 .banner-video {
   position: relative;
   width: 100%;
@@ -7607,4 +7700,151 @@ test*/
 }
 .slick-prev:before,.slick-next:before{
   display: none !important;
+}
+
+
+/* grid ảnh trang 15 - 16 */
+
+.grid-box .grid-img{
+  position: relative;
+  overflow: hidden;
+}
+.grid-box img{
+ width: 100%;
+ height: 100%;
+}
+.grid-box .grid-img .item{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: 0.4s;
+  background: rgba(49, 129, 36, 0.93);
+  transition: all 0.8s;
+  opacity: 0;
+}
+.grid-box .grid-img .item:hover{
+  opacity: 1;
+  transition: 0.4s;
+}
+.grid-box .grid-info{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 20%);
+  text-align: center;
+  
+
+}
+.grid-box .item{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: 0.4s;
+  background: rgba(49, 129, 36, 0.93);
+  transition: all 0.8s;
+  opacity: 0;
+}
+.grid-box .item:hover{
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.grid-box .grid-info h3{
+  margin-top: 10px;
+  margin-bottom: 0;
+  opacity: 1;
+  color: #fff;
+}
+.grid-box .grid-info p{
+  opacity: 1;
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 10px;
+}
+.grid-box .grid-info span{
+  padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+}
+
+.grid-box > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.grid-box > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 2px 16px var(--shadow);
+}
+
+.grid-box-page {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 240px;
+  grid-auto-flow: dense;
+  overflow: hidden;
+
+}
+.grid-box{
+  position: relative;
+}
+
+.horizontal {
+  grid-column: span 2;
+  overflow: hidden;
+}
+
+.vertical {
+  grid-column: span 2;
+  grid-row: span 2;
+  overflow: hidden;
+  display: flex;
+}
+
+.big {
+  grid-column: span 1;
+  grid-row: span 2;
+  overflow: hidden;
+}
+.big img{
+  
+}
+.default{
+  grid-column: span 2;
+  grid-row: span 1;
+  overflow: hidden;
+}
+.gird-images{
+  position: relative;
+}
+.gird-images .images-default{
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 2;
+}
+.square-item{
+  grid-column: span 1;
+  grid-row: span 1;
+  overflow: hidden;
 }
