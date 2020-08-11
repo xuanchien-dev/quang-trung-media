@@ -7420,6 +7420,7 @@ test*/
           transform: scale(1);
   overflow: hidden;
 }
+
 .grid-img-rhombus .item:nth-child(11n + 1) {
   grid-column: 2 / span 2;
 }
@@ -7603,4 +7604,7 @@ test*/
     border: 1px solid #BABABA !important;
     box-sizing: border-box !important;
     border-radius: 5px !important;
+}
+.slick-prev:before,.slick-next:before{
+  display: none !important;
 }
