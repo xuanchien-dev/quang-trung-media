@@ -15,13 +15,15 @@ $(document).on('ready', function() {
         margin:30,
         slidesToShow: 4,
         slidesToScroll: 4,
+        autoplay: true,
         prevArrow:"<button class='prev slick-prev'><img class='left-arrow ' src='img/left.png'></button>",
         nextArrow:"<button class='next slick-next'><img class='right-arrow ' src='img/right.png'></button>",
         responsive:[{
           breakpoint: 576,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: true
           }
         }]
 

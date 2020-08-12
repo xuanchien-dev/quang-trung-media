@@ -116,7 +116,7 @@
     }
     .list-footer-1 .icon i{
     	width: auto;
-    	margin-right: 20px;
+    	margin-right: 30px;
     }
   	.button-2{
   		display: inline-block !important;
@@ -787,7 +787,20 @@
 	.achievements-page-grid .title-dark{
 		margin-bottom: 20%;
 	}
-	
+	.list-footer-1 .icon{
+		width: 100%;
+	}
+	.diamond-grid-page {
+		margin-top: -15%;
+	}
+	.grid{
+		grid-template: 40px 40px 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px 40px 40px;
+		grid-column-gap: 5px;
+		grid-row-gap: 5px;
+	}
+	.modal.in .modal-dialog {
+		margin-top: 35%;
+	}
 }
 
 
@@ -805,7 +818,7 @@
 
 
 
-@media screen and (min-width: 576px) and (max-width: 1400px){
+@media screen and (min-width: 576px) and (max-width: 1300px){
 	.grid-image-16 .grid-item .column .img-box-grid .text img {
 	    width: 140px;
 	    margin-bottom: 10px;
@@ -865,10 +878,29 @@
 	.gird-images .images-default{
 		top: -12%;
 	}
+	.diamond-grid-page {
+		margin-top: -5% !important;
+	}
+	.grid{
+		grid-template: 80px 80px 80px 80px 80px 80px 80px / 80px 80px 80px 80px 80px 80px 80px;
+		grid-column-gap: 5px;
+		grid-row-gap: 5px;
+	}
 	
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1536px){
 	.diamond-grid-page {
 		margin-top: -30% !important;
 	}
-
-	
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px){
+	.diamond-grid-page {
+		margin-top: -5% !important;
+	}
+	.grid{
+		grid-template: 120px 120px 120px 120px 120px 120px 120px / 120px 120px 120px 120px 120px 120px 120px;
+		grid-column-gap: 5px;
+		grid-row-gap: 5px;
+	}
 }
