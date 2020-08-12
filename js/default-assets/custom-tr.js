@@ -35,6 +35,17 @@ $(document).on('ready', function() {
         nextArrow:"<span class='next'></span>",
       });
 
+      /* slide trang 13 */
+      $(".slider-page-13").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow:"<span class='prev-mini slick-arrow'><img class='left-arrow ' src='img/rightmini.png'></span>",
+        nextArrow:"<span class='next-mini slick-arrow'><img class='right-arrow ' src='img/leftmini.png'></span>",
+      });
+
+
     $(".lazy").slick({
         lazyLoad: 'ondemand', 
         infinite: true,
