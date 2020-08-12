@@ -31,6 +31,7 @@
 		font-size: 14px;
 	}
 	
+	
 	 
 }
 @media screen and (max-width: 990px){
@@ -648,6 +649,7 @@
 		width: 100%;
 		padding-left:15px;
 		padding-right:15px;
+		margin-right: 0;
 	}
 	.background-login{
 		padding-top:50px;
@@ -785,6 +787,7 @@
 	.achievements-page-grid .title-dark{
 		margin-bottom: 20%;
 	}
+	
 }
 
 
@@ -862,5 +865,10 @@
 	.gird-images .images-default{
 		top: -12%;
 	}
+	
+	.diamond-grid-page {
+		margin-top: -30% !important;
+	}
+
 	
 }

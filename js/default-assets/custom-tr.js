@@ -76,7 +76,7 @@ $(document).on('ready', function() {
       slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: '.slider-for',
-      dots: true,
+      dots: false,
       centerMode: true,
       focusOnSelect: true,
       autoplay: false,
