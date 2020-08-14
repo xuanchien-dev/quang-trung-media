@@ -32,7 +32,6 @@ $(document).on('ready', function() {
 
     $(".map-slider-footer").slick({
         lazyLoad: 'ondemand',
-    
         prevArrow:"<span class='prev'><p>Trụ sở chính </p></span>",
         nextArrow:"<span class='next'></span>",
       });
@@ -55,6 +54,7 @@ $(document).on('ready', function() {
         prevArrow:"<span class='prev'></span>",
         nextArrow:"<span class='next'></span>",
       });
+
     $(".click-item").click(function () {
         $(".show-item").fadeToggle("slow");
     });
@@ -102,7 +102,6 @@ $(document).on('ready', function() {
     });
     $(".slider-new-mobile").slick({
         lazyLoad: 'ondemand',
-      /*  infinite: true,*/
         prevArrow:"<span class='prev'></span>",
         nextArrow:"<span class='next'></span>",
       });
@@ -144,20 +143,18 @@ $(document).on('ready', function() {
         });
 
     
-var acc = document.getElementsByClassName("accordion");
-    var i;
+    var acc = document.getElementsByClassName("accordion");
+        var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    };
-
-
-});
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        };
+    });

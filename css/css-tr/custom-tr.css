@@ -1230,7 +1230,7 @@ table tr td:nth-child(3) {
   background-color: #F3F3F3;
   color: #000000;
   cursor: pointer;
-  padding: 18px 18px 18px 60px;
+  padding: 10px 18px 11px 60px;
   width: 100%;
   border: none;
   text-align: left;
@@ -1488,7 +1488,7 @@ table tr td:nth-child(3) {
 .post-style-3 .box-post .title-post h5 {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   margin-top:0;
@@ -1743,35 +1743,38 @@ table tr td:nth-child(3) {
 
 .date-item-grid .btn-like {
   background: #2B62D1;
-    border-radius: 5px;
-    position: relative;
-    padding-left: 35px;
-    padding-right: 5px;
-    color: #fff;
-    margin-right: 15px;
-    padding-top: 3px;
-    padding-bottom: 1px;
+  border-radius: 5px;
+  position: relative;
+  padding-left: 41px;
+  padding-right: 12px;
+  color: #fff;
+  margin-right: 15px;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  font-size: 11px;  
 }
 .date-item-grid .btn-like:before {
   position: absolute;
   content: url(../../img/liket.png);
   left: 10px;
+  top:4px;
 }
 .date-item-grid .btn-share {
   background: #2B62D1;
   border-radius: 5px;
   position: relative;
-  padding-left: 24px;
-    padding-right: 5px;
-    color: #fff;
-    margin-right: 15px;
-    padding-top: 3px;
-    padding-bottom: 1px;
+  padding-left: 32px;
+  padding-right: 12px;
+  color: #fff;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  font-size: 11px;  
 }
 .date-item-grid .btn-share:before {
   position: absolute;
   content: url(../../img/sharet.png);
-  left: 6px;
+  left: 10px;
+  top:5px;
 }
 
 
@@ -1792,7 +1795,7 @@ table tr td:nth-child(3) {
   font-family: Roboto;
   font-style: normal;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   color: #000000;
   margin-top: 15px;
     margin-bottom: 15px;
@@ -1921,7 +1924,7 @@ color: #000000;
     font-size: 14px;
     line-height: 16px;
     color: #000000;
-        margin-top: 10px;
+    margin-top: 15px;
 }
 .faq-page-default .panel ul li:hover{
   cursor: pointer;
@@ -1971,11 +1974,13 @@ color: #000000;
   position: absolute;
   content: url(../../img/faq1.png);
   left: 15px;
+  top: 8px;
 }
 .style-tt span{
   position: absolute;
   content: url(../../img/thanhtoan3.svg);
   left: 15px;
+  top: 8px;
 }
 .style-ddh span{
   position: absolute;
@@ -1986,21 +1991,25 @@ color: #000000;
   position: absolute;
   content: url(../../img/cart.png);
   left: 15px;
+  top: 6px;
 }
 .style-tthc span{
   position: absolute;
   content: url(../../img/thutucthanhtoan.svg);
   left: 15px;
+  top: 6px;
 }
 .style-vc span{
   position: absolute;
   content: url(../../img/vc.svg);
   left: 15px;
+  top: 0px;
 }
 .style-sp span{
   position: absolute;
   content: url(../../img/muasam.svg);
   left: 15px;
+  top: 4px;
 }
 .style-qt span{
   position: absolute;
@@ -6428,6 +6437,7 @@ color: #000000;
   margin-bottom: 15px;
   height: 90px;
 }
+
 .form-support textarea::placeholder {
   color: #136506;
 }
@@ -6442,6 +6452,22 @@ color: #000000;
 }
 .input-form textarea {
   border-bottom: 1px solid #136506;
+  position: relative;
+}
+.input-form span{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.input-form span:before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #f6ffeb;
+  z-index: 1;
+  right: 0;
+  bottom: 23px;
 }
 
 .btn-support {
@@ -6466,6 +6492,7 @@ color: #000000;
   background: #318124;
   border-radius: 5px;
   text-align: center;
+  padding-top: 10px;
 }
 
 .by-product a {
@@ -7292,6 +7319,10 @@ border-radius: 5px;
 .introduce-pr .content p b{
   position: relative;
   margin-left: 25px;
+  font-size: 14px;
+}
+.introduce-pr .content p span:last-child{
+  font-size: 14px;
 }
 .introduce-pr .content p b:before{
   position: absolute;
@@ -7308,7 +7339,8 @@ border-radius: 5px;
 }
 .content-post-detail .col-md-6{
   padding: 0;
-  float: left;
+  float: right;
+  margin-left: 20px;
 }
 .content-post-detail .col-md-6 .title-icon, .content-post-detail .col-md-6 .post-style-3{
   margin-top:0;
@@ -8125,7 +8157,6 @@ test*/
 
 .diamond-grid-page {
   display: inline-block;
-  width: 100%;
   overflow: inherit;
   padding-bottom: 0%;
   margin-top: -10% ;
