@@ -107,7 +107,7 @@ body{
 
 }
 .cate_pc{
-	width:270px;
+	width:252px;
 	float: left;
 	height: 52px;
 	padding: 15px;
@@ -148,7 +148,7 @@ body{
 .form_search *{
 	padding: 0px 10px;
 	font-size: 14px;
-	color: #318124;
+	color: #4E4E4E;
 }
 .form_search select{
 	width: 100%;
@@ -164,7 +164,7 @@ body{
 .form_search span:before{
 	position: absolute;
     content: url(../../img/select.png);
-    right: 4px;
+    right: 5px;
     z-index: 1;
     top: 14px;
 }
@@ -314,7 +314,7 @@ body{
 .list_v2 .item  {
 	width: 33.33333%;
 	float: left;
-	padding-right: 20px;
+	padding-right: 9%;
 }
 .list_v2 .item .header_mn {
 	position: relative;
@@ -342,16 +342,19 @@ body{
 }
 .list_v2::-webkit-scrollbar {
 	width: 5px;
+	
 }
 
 /* track */
 .list_v2::-webkit-scrollbar-track {
 	background: #f1f1f1; 
+	
 }
 
 /* handle */
 .list_v2::-webkit-scrollbar-thumb {
 	background: #318124;
+	
 }
 
 /* handle on hover */
@@ -812,7 +815,7 @@ body{
 }
 .bh p{
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 21px;
 	margin: 0px;
 	margin-bottom: 3%;
@@ -936,9 +939,8 @@ body{
 	border: 0px;
 	font-size: 14px;
 	line-height: 16px;
-
 	color: #FFFFFF;
-	padding-left: 10%;
+	padding-left: 12%;
 }
 .item_page form input::-webkit-input-placeholder { /* Edge */
 	color: #FFFFFF;
