@@ -1082,11 +1082,21 @@
 	.slider-nav-map{
 		position: inherit !important;
 		top: 0;
-    	left: 0;
-	}
-	.slider-nav-map {
+		left: 0;
 		width: 100% !important;
-	  }
+	}
+	.mapslide-small .maps-slider-acount {
+		position: inherit;
+	}
+	.mapslide-small .maps-slider-acount .slider-for-map {
+		width: 100%;
+	}
+	.mapslide-small .maps-slider-acount .slider-nav-map {
+		width: 100%;
+		display: inline-block !important;
+		position: relative !important;
+	}
+	
+
 	 
 }
-
