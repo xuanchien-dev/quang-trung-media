@@ -44,7 +44,10 @@
 	.search-system div{
 		height: 40px;
 		overflow: hidden;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
+	
 	.search-system select{
 		padding-top: 9px;
 		padding-bottom: 9px;
@@ -426,12 +429,33 @@
 	.info-product table tr td p{
 		font-size: 12px;
 	}
+	.info-product table tr td .img-cart{
+		padding: 0;
+	}
+	.info-product table tr .delete-pro {
+		width: 18px;
+		height: 18px;
+		top: -5px;
+		right: -5px;
+	}
+	.info-product table tr .delete-pro:before, .info-product table .delete-pro:after {
+		top: 8px;
+		right: 2px;
+	}
+	table tr td:nth-child(2){
+		padding-right: 0;
+	}
+	
+	.info-product table tr td:last-child {
+		width: 30%;
+	}
+	.info-product table tr td p span:before {
+		top: 45%;
+	}
 	.breadcrumb-mobile{
 		margin-top: 15px;
 	}
-	.banner .title h2:before{
-		bottom: -5px;
-	}
+	
 	.system-show, .maps-system{
 		width: 100%;
 	}
@@ -501,6 +525,9 @@
 	.link-section .title p{
 		padding-left: 15px;
 	}
+	.link-section .title{
+		margin-top: 15px;
+	}
 	.detail-button{
 		background:#fff;
 	}
@@ -563,7 +590,6 @@
 	}
 	.new-left .date-item-grid{
 		display: block;
-    	text-align: center;
 	}
 	.new-left .date-item-grid p{
 		margin-bottom: 10px;
@@ -596,6 +622,7 @@
 	.introduce-page{
 		margin-top: 20px;
 		margin-bottom: 20px;
+		padding-bottom: 20px;
 	}
 	.content-introduce-style-2{
 		padding-top:0;
@@ -628,20 +655,28 @@
 	.staff-page{
 		margin-bottom: 40px;
 	}
-	.item-right:before {
-	    left: -10px;
+	.title-staff{
+		margin-top: 0;
+		margin-bottom: 10px;
 	}
-	.item-right:after {
-	    left: -2px;
+	.staff{
+		padding: 0;
+		margin:0;
 	}
-	.item-staff-left:after{
+	.staff:before, .staff:after{
 		display: none;
 	}
-	.item-left:after {
-	    left: -2px;
+	.staff .staff-item{
+		width: 100%;
+		padding-left:45px;
+		padding-right: 15px;
+		margin: 0 !important;
 	}
-	.item-left:before {
-	    left: -10px;
+	.staff .staff-item:before {
+		left: 4px !important;
+	}
+	.staff .staff-item:after {
+		left: 12px !important;
 	}
 	/* grid anh mh 16 */
 	.grid-image-16 .grid-item .column .img-box-grid .text{
@@ -766,6 +801,9 @@
 	.shopping-item-style-1 .content-shopping .title:after{
 		left:0px;
 	}
+	.shopping-item-style-1 .item:nth-child(3) .title:after{
+		right: -1%;
+	}
 	.breadcrumb-page{
 		margin-top:10px;
 		margin-bottom: 10px;
@@ -792,7 +830,7 @@
 	    line-height: 1;
 	}
 	.call-now .call-item p span{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.call-now:before {
 	    background: #c5e6c0;
@@ -839,7 +877,6 @@
 	.box-show-info{
 		padding: 10px;
 	    border-radius: 5px;
-	    height: auto;
 	    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.19);
 	}
 	.form-info-acc .item .item-select .item-part-choose{
@@ -864,9 +901,7 @@
 	.form-info-acc .item .item-part-choose select{
 		margin-bottom: 10px;
 	}
-	.account-page23 .box-show-info{
-		height: 300px;
-	}
+	
 	.box-show-info-2 .form-page-24{
 		width: 100%;
 	}
@@ -890,15 +925,19 @@
 	.footer-item:before{
 		background:#328125;
 	}
-	.comment-page .comment textarea{
+	/*.comment-page .comment textarea{
 		border-radius: 5px;
 		border: 1px solid #777777;
-	}
+	}*/
 	.new-left{
-		padding-bottom: 0;
+		padding-bottom: 30px;
 	}
 	.colcation-item p span{
 		margin: 0;
+	}
+	.colcation-item p span img{
+		width: 10px;
+		margin-right: 10px;
 	}
 	.location{
 		padding-top: 20px;
@@ -917,8 +956,8 @@
 		padding-bottom: 20px;
 	}
 	.pagination{
-		padding-left:50px;
-		padding-right: 50px;
+		padding-left:25px;
+		padding-right: 25px;
 	}
 	.pagination li{
 		display: none;
@@ -927,8 +966,8 @@
 		display: block;
 	}
 	.grid-box-page{
-		grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-		grid-auto-rows: 50px;
+		grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+		grid-auto-rows: 40px;
 		grid-gap: 5px;
 	}
 	.gird-images .images-default{
@@ -971,6 +1010,69 @@
 	}
 	.diamond-hidden .achievements-page-grid{
 		top: 7%;
+	}
+	.btn-click-show{
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+	.payment-right .payment-item .payment{
+		width: 100%;
+	}
+	.comment-page .filter P{
+		font-size: 12px;
+	}
+	.comment-page .filter P:nth-child(2){
+		display: flex;
+	}
+	.comment-page .filter P span:before {
+		content: url(../../img/topdmini.png);
+		top: 1px;
+	}
+	.slide-detail-post{
+		width: 100%;
+	}
+	.comment-page .comment .img-avatar{
+		width: 58px;
+	}
+	.sidebar-right{
+		padding-bottom: 15px;
+	}
+	.grid-box .item{
+		display: none;
+	}
+	.re-button{
+		height: 32px;
+	}
+	.btn-fb, .btn-gg{
+		padding-left: 40px;
+		padding-right: 20px;
+		padding-top:7px;
+		padding-bottom: 7px;
+		width: 48%;
+	}
+	.btn-fb:before, .btn-gg:before{
+		left: 20px;
+	}
+	.silder-detai-product .slider-for .img{
+		height:auto;
+	}
+	.silder-detai-product .slider-for .img img{
+		width: 100%;
+	}
+	.detail-box .item:nth-child(1), .detail-box .item:last-child{
+		border: 1px solid #E9E9E9;
+	}
+	.detail-box{
+		padding-bottom: 15px;
+	}
+	.grid .default:hover .text-over, .grid .default:hover:after, .grid .default:hover:before{
+		display: none;
+	}
+	.banner-video .button-video:before {
+		width: 60px;
+		height: 60px;
+		top: -14px;
+		left: -22px;
 	}
 }
 

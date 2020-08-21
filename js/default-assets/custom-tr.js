@@ -40,6 +40,7 @@ $(document).on('ready', function() {
       $(".slider-page-13").slick({
         dots: false,
         infinite: true,
+        margin:10,
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow:"<span class='prev-mini slick-arrow'><img class='left-arrow ' src='img/rightmini.png'></span>",

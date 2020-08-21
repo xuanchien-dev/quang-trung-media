@@ -282,6 +282,15 @@ body{
 	align-items: center;
 
 }
+.list_cate ul a .hover{
+	display: none;
+}
+.list_cate ul a:hover .hover{
+	display: block;
+}
+.list_cate ul a:hover img{
+	display: none;
+}
 .list_cate ul a:hover{
 	font-weight: 700;
 	color: #318124;
