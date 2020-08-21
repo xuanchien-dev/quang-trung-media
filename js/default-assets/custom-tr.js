@@ -95,6 +95,24 @@ $(document).on('ready', function() {
       focusOnSelect: true,
       autoplay: false,
     });
+    $('.slider-for-map').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav-map'
+      });
+      $('.slider-nav-map').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for-map',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      autoplay: false,
+      prevArrow:"<button class='prev-map slick-prev'><img class='left-map-arrow ' src='img/leftmap.png'></button>",
+          nextArrow:"<button class='next-map slick-next'><img class='right-map-arrow ' src='img/rightmap.png'></button>",
+      });
     $(".humburger").click(function () {
           $(".list-menu-mobile").fadeToggle("slow");
       });

@@ -40,9 +40,9 @@ body{
 .slider-info .item .address {
   text-align: center;
   padding-top: 30px;
-  padding-left: 45px;
-  height: 81px;
+  padding-left: 68px;
   overflow: hidden;
+  padding-right: 20px;
 }
 .slider-info .item .address strong {
   font-family: Roboto;
@@ -63,6 +63,7 @@ body{
     font-size: 18px;
     margin-left: 15px;
     letter-spacing: 1px;
+    display: inline-block;
 }
 .slider-info .item .address a:hover {
   cursor: pointer;
@@ -3212,6 +3213,7 @@ color: #000000;
   width: 100%;
   margin-top: 30px;
   box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.19);
+  background:#fff;
 }
 .map-slider .slick-slide {
   padding-left: 0;
@@ -4415,6 +4417,7 @@ color: #000000;
 @charset "UTF-8";
 .maps-slider-acount {
   position: relative;
+  overflow: hidden;
 }
 .maps-slider-acount iframe {
   width: 100%;
@@ -7786,8 +7789,60 @@ test*/
 .silder-detai-product .slider-for,
 .silder-detai-product .slider-nav,
 .silder-detai-product .slider-for .slick-slide,
-.silder-detai-product .slider-nav .slick-slide{
+.silder-detai-product .slider-nav .slick-slide,
+.slider-for-map, .slider-nav-map{
   display: inline-block;
+  width: 100%;
+}
+.slider-nav-map{
+  position: absolute !important;
+  top: 8%;
+  left: 29.7%;
+}
+.slider-nav-map .slick-list{
+  background-color: #fff;
+}
+.slider-nav-map {
+  width: 500px !important;
+}
+.slider-nav-map .slick-slide{
+  width:500px;
+}
+.slider-nav-map .small{
+  width: 100%;
+}
+.slider-nav-map .small .slider-info{
+  width: 100%;
+}
+.slider-nav-map .next-map{
+  background: #318124;
+  border-radius: 2px;
+  width: 22px;
+  height: 22px;
+}
+.slider-nav-map .prev-map{
+  background: #318124;
+  border-radius: 2px;
+  width: 22px;
+  height: 22px;
+}
+.maps-slider-acount .slider-nav-map .slick-prev{
+  position: absolute;
+  top: 97%;
+  left:87%;
+  z-index: 2;
+}
+.maps-slider-acount .slider-nav-map .slick-next{
+  position: absolute;
+  top: 97%;
+  left:93%;
+  
+}
+.slider-nav-map .next-map:hover, .slider-nav-map .prev-map:hover,
+.slider-nav-map .next-map:focus, .slider-nav-map .prev-map:focus{
+  background: #318124;
+}
+.slider-for-map .big{
   width: 100%;
 }
 .silder-detai-product .slider-for .img{
@@ -8088,7 +8143,7 @@ test*/
 .slider-for img {
   width: 100%; }
 
-.slider-nav slick-slide:hover {
+.slider-nav .slick-slide:hover {
   cursor: pointer; }
 
 .slick-prev, .slick-next {
@@ -8526,28 +8581,8 @@ test*/
   .slider-for-video .item iframe {
     width: 100%; }
   
-  .slider-nav slick-slide:hover {
+  .slider-nav .slick-slide:hover {
     cursor: pointer; }
-  
-  .slick-prev, .slick-next {
-    position: absolute;
-    top: 50%;
-    margin-top: -30px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    font-size: 0; }
-    .slick-prev:before, .slick-next:before {
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      content: "";
-      display: block;
-      height: 60px;
-      opacity: 1;
-      width: 30px; }
-    .slick-prev:hover:before, .slick-next:hover:before {
-      opacity: .8; }
-  
   .slick-prev {
     left: 0; }
     

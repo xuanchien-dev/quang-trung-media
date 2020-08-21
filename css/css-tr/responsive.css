@@ -142,6 +142,11 @@
 	.vertical .grid-info span{
 		font-size: 24px !important;
 	}
+	.slider-nav-map {
+		position: absolute !important;
+		top: 8%;
+		left: 21.7%;
+	}
 }
 @media screen and (min-width: 1001px) and (max-width: 1299px){
 	.grid{
@@ -1074,5 +1079,14 @@
 		top: -14px;
 		left: -22px;
 	}
+	.slider-nav-map{
+		position: inherit !important;
+		top: 0;
+    	left: 0;
+	}
+	.slider-nav-map {
+		width: 100% !important;
+	  }
+	 
 }
 
