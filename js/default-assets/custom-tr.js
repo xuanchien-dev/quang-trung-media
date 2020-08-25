@@ -59,7 +59,12 @@ $(document).on('ready', function() {
     $(".click-item").click(function () {
         $(".show-item").fadeToggle("slow");
     });
-  
+  $(".list-cate-seemore").click(function () {
+        $(".list-see-more").fadeToggle("slow");
+    });
+  $(".policy .btn-style-8").click(function () {
+        $(".readmore-20").fadeToggle("slow");
+    });
     $('input.input-qty').each(function() {
         var $this = $(this),
             qty = $this.parent().find('.is-form'),
