@@ -31,3 +31,8 @@ $('.slider-for-video').slick({
 $(".click-title").click(function(){
   $(this).addClass("active-click");
 });
+
+$(".text").click(function(){
+  $(this).css("display","none");
+});
+
