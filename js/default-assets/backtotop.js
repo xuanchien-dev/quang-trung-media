@@ -31,8 +31,17 @@ $('.slider-for-video').slick({
 $(".click-title").click(function(){
   $(this).addClass("active-click");
 });
+$(".title-tabfaq-item").click(function(){
+  $(this).addClass("active-click");
+});
 
 $(".text").click(function(){
   $(this).css("display","none");
 });
-
+$('.block__title').click(function(event) {
+        if($('.block').hasClass('one')){
+            $('.block__title').not($(this)).removeClass('active');
+            $('.block__text').not($(this).next()).slideUp(300);
+        }
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
