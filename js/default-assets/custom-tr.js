@@ -35,6 +35,24 @@ $(document).on('ready', function() {
         prevArrow:"<span class='prev'><p>Trụ sở chính </p></span>",
         nextArrow:"<span class='next'></span>",
       });
+    $('.map-slider-for-footer').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.map-slider-nav-footer'
+    });
+    $('.map-slider-nav-footer').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.map-slider-for-footer',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      autoplay: false,
+      prevArrow:"<span class='prev'></span>",
+        nextArrow:"<span class='next'></span>",
+    });
 
       /* slide trang 13 */
       $(".slider-page-13").slick({
@@ -100,6 +118,7 @@ $(document).on('ready', function() {
       focusOnSelect: true,
       autoplay: false,
     });
+    /*
     $('.slider-for-map').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -117,7 +136,8 @@ $(document).on('ready', function() {
       autoplay: false,
       prevArrow:"<button class='prev-map slick-prev'><img class='left-map-arrow ' src='img/leftmap.png'></button>",
           nextArrow:"<button class='next-map slick-next'><img class='right-map-arrow ' src='img/rightmap.png'></button>",
-      });
+      });*/
+      
     $(".humburger").click(function () {
           $(".list-menu-mobile").fadeToggle("slow");
       });

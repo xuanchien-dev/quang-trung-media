@@ -4363,26 +4363,36 @@ color: #000000;
     padding-top: 3px;
     padding-left: 10px;
 }
-
+/*.mapslider-item-1{
+      position: relative;
+    height: 262px;
+    overflow: hidden;
+}
 .map-slider-footer .prev p{
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
   color: #fff;
 }
-.map-slider-footer .prev p:before {
+.map-slider-nav-footer .prev:after {
   position: absolute;
   content: url(../../img/leftf.png);
-  padding-right: 9px;
-  padding-left: 10px;
-  right:-30px;
+    background: #FF8A00;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    padding-left: 16px;
+  left:40%;
+  bottom: 82px;
+  z-index: 3;
 }
 .map-slider-footer .next {
   position: absolute;
   left: 100px;
   bottom: 10px;
 }
-.map-slider-footer .next:before {
+.map-slider-nav-footer .next:before {
+  position: absolute;
     content: url(../../img/right1.png);
     background: #FF8A00;
     padding-top: 4px;
@@ -4390,13 +4400,93 @@ color: #000000;
     padding-right: 20px;
     padding-left: 16px;
     border-radius: 0px 20px 0px 0px;
-    bottom: 0;
+    bottom: 82px;
+    right: 25%;
 }
 
 .mapslider-item {
   position: relative;
   padding: 0;
 }
+.map-slider-nav-footer{
+  position: absolute !important;
+  bottom: -82px;
+    overflow: hidden;
+}
+.map-slider-nav-footer .info-dd{
+    width: 370px !important;
+}
+.map-slider-nav-footer .info-dd p{
+  color: #fff;
+    background: #ff8a00;
+    padding: 7px 10px 8px 25px;
+    width:133px;
+}
+.map-slider-nav-footer .slick-slide{
+      width: 370px !important;
+    margin-left: -80px;
+}
+*/
+.mapslider-item-1{
+  height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.map-slider-for-footer{
+  height: 250px;
+}
+.map-slider-nav-footer{
+  position: absolute !important;
+  bottom: 0;
+  width:180px;
+}
+.map-slider-nav-footer .info-dd{
+    width: 180px !important;
+}
+.map-slider-nav-footer .slick-list{
+  padding-left: 0 !important;
+}
+.map-slider-nav-footer .slick-slide{
+}
+.map-slider-nav-footer .info-dd p{
+  color: #fff;
+    background: #ff8a00;
+    padding:5px 10px 5px 25px;
+    width:133px;
+        margin-bottom: 0;
+}
+.map-slider-nav-footer .prev:after {
+  position: absolute;
+  content: url(../../img/leftf.png);
+    background: #FF8A00;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-right: 0px;
+    padding-left: 16px;
+  bottom: 0px;
+  z-index: 3;
+  left:130px;
+}
+
+.map-slider-nav-footer .next:before {
+  position: absolute;
+    content: url(../../img/right1.png);
+    background: #FF8A00;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    padding-left: 16px;
+    border-radius: 0px 20px 0px 0px;
+    bottom: 0px;
+    left:150px;
+}
+
+
+
+
+
+
+
 
 
 .footer-map .mapslider-item .slider-info {
@@ -8600,43 +8690,7 @@ test*/
     
   .slick-next {
     right: 0; }
-    /*
-  .modal-content {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0 none;
-    border-radius: 0;
-    margin-left: 1px; }
-    .modal-content .modal-body {
-      padding: 0; }
-      .modal-content .modal-body iframe {
-        margin-bottom: -5px; }
-    .modal-content .modal-header {
-      border: 0 none;
-      height: 0;
-      min-height: 0;
-      padding: 0; }
-      .modal-content .modal-header .close {
-        background-color: #000000 !important;
-        border: 2px solid #ffffff !important;
-        border-radius: 13px;
-        color: #ffffff;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        height: 26px;
-        opacity: 1;
-        padding-bottom: 0;
-        position: absolute;
-        right: -13px;
-        text-shadow: none;
-        top: -13px;
-        width: 26px;
-        z-index: 1; }
-  .slider-nav-video .slick-slide{
-    padding: 15px;
-    overflow: hidden;
-  }*/
-  /* css popup video */
+    
   
 /* button: ghi nho mat khau trang 21 */
 .checkbox-button label{
@@ -8857,220 +8911,6 @@ test*/
         margin-top: 10px;
 }
 
-/* chi tiet san pham */
-/*.product-details .product-img {
-    height: 73px;
-    border: 1px solid var(--bg-navbar-color);
-    border-radius: 3px;
-}
-
-#tab .nav-link.active .product-img,
-#tab .nav-link:active .product-img {
-    border: 1px solid #ffa024;
-}
-
-.product-details .product-img:hover {
-    border: 1px solid #ffa024;
-}
-
-.product-details .product-detail {
-    display: flex;
-    flex-direction: column;
-    height: 73px;
-    width: 73px;
-    color: var(--bg-navbar-color);
-    padding: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.product-details .product-detail:hover {
-    text-decoration: none;
-}
-
-.product-details .discount .card-header {
-    background-color: var(--bg-nav);
-    border: 1px solid var(--bg-nav);
-}
-
-.product-details .discount .card-header span {
-    font-size: 13px;
-}
-
-.product-details .discount .card-body span {
-    font-size: 12.5px;
-    color: var(--text-color-2);
-    text-align: left;
-    letter-spacing: 0px;
-}
-
-.steps-section {
-    background: #EFF6FF 0% 0% no-repeat padding-box !important;
-}
-
-.product-details .discount span.step {
-    font-size: 10px;
-    height: 16px;
-    width: 16px;
-    border-radius: 8px;
-    color: white;
-    margin-right: 16px;
-    text-align: center;
-}
-.product-option .nav-item {
-    height: 55px;
-    width: 100px;
-}
-
-.product-option .nav-link {
-    border: 1px solid #707070;
-    border-radius: 3px;
-}
-
-.product-option .nav-link p {
-    color: var(--text-color);
-}
-
-.product-option .nav-link.active,
-.product-option .nav-link:active,
-.product-option .nav-link:hover {
-    border: 1px solid #ED1C24;
-    border-radius: 3px;
-    font-weight: bold;
-    background-color: #FFF5F5;
-}
-#img-preview {
-    position: fixed;
-    display: none;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    cursor: pointer;
-}
-
-#img-preview .close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    color: white;
-    font-weight: 900;
-}
-
-#img-preview .container {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-#img-preview .pre-carousel .owl-nav {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    left: 0;
-    width: 100%;
-    right: 0;
-    top: 40%;
-}
-
-#img-preview .pre-carousel .owl-nav .owl-next,
-#img-preview .pre-carousel .owl-nav .owl-prev {
-    display: flex;
-    align-items: center;
-}
-
-#img-preview .pre-carousel .owl-nav button {
-    position: absolute;
-}
-
-#img-preview .pre-carousel .owl-nav .owl-next {
-    right: -100px;
-}
-
-#img-preview .pre-carousel .owl-nav .owl-prev {
-    left: -100px;
-}
-
-#img-preview .pre-carousel .owl-nav button i {
-    background-color: rgba(0, 0, 0, .7);
-    border-radius: 3px;
-    padding: 10px;
-    color: white;
-}
-
-#video-preview {
-    position: fixed;
-    display: none;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    cursor: pointer;
-}
-
-#video-preview .container {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-#video-preview .close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    color: white;
-    font-weight: 900;
-}
-
-#video-preview .pre-carousel .owl-nav {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    left: 0;
-    width: 100%;
-    right: 0;
-    top: 40%;
-}
-
-#video-preview .pre-carousel .owl-nav .owl-next,
-#video-preview .pre-carousel .owl-nav .owl-prev {
-    display: flex;
-    align-items: center;
-}
-
-#video-preview .pre-carousel .owl-nav button {
-    position: absolute;
-}
-
-#video-preview .pre-carousel .owl-nav .owl-next {
-    right: -100px;
-}
-
-#video-preview .pre-carousel .owl-nav .owl-prev {
-    left: -100px;
-}
-
-#video-preview .pre-carousel .owl-nav button i {
-    background-color: rgba(0, 0, 0, .7);
-    border-radius: 3px;
-    padding: 10px;
-    color: white;
-}
-*/
 /* chi tiet san pham style 2 */
 .product-detail-style2 .product-gallery .product-image{
   width: 370px;
@@ -9122,4 +8962,8 @@ max-height: 100%;
     top: -23px;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+
+.slider-nav-map ul li p{
+  color: #000;
 }
