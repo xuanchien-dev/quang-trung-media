@@ -8967,3 +8967,106 @@ max-height: 100%;
 .slider-nav-map ul li p{
   color: #000;
 }
+.slider-g1 .item{
+  width: 100%;
+  height: 400px;
+}
+.slider-g1 .item img {
+    padding: 20px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slider-g1 .slick-arrow{
+    width: 50px;
+    height: 50px;
+    background: #20980e47;
+}
+.slider-g1 .slick-arrow:hover{
+    background: #20980e47;
+}
+.slider-g1 .slick-next {
+  right: 25px;
+  top: 70%;
+}
+.slider-g1 .slick-prev {
+  left: 25px;
+  top: 70%;
+}
+
+
+/* chitiet sp */
+.ctsp-box .tablink {
+  background-color: #fff;
+  color: #000;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 25%;
+  border: 1px solid #E9E9E9;
+  width: 70px;
+  height: 57px;
+}
+.ctsp-box .tablinkvideo{
+  position: relative;
+  
+}
+.ctsp-box .tablinkvideo:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #3181245c;
+  top:0;
+  left: 0;
+}
+
+.ctsp-box .tabcontent {
+  color: #000;
+  display: none;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #E9E9E9;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.ctsp-box .tabcontent a{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.ctsp-box .tabcontent a img{
+ width: 100%;
+}
+.ctsp-box .img-choose{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.ctsp-box .img-choose .btn-tskt-s1{
+  color: #318124;
+  font-size: 12px;
+  position: relative;
+   width: 70px;
+  height: 57px;
+  text-align: center;
+  margin-top: 25px;
+}
+.ctsp-box .img-choose .btn-tskt-s1:hover{
+    text-decoration: none;
+}
+.ctsp-box .img-choose .btn-tskt-s1:before {
+    position: absolute;
+    content: url(../../img/tskt.png);
+    top: -23px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+}  
