@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link href="css/vendors/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- <link href="css/vendors/plugin.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/vensdor/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/css-tr/datacss.css" />
@@ -21,8 +20,8 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css">
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 
@@ -117,7 +116,27 @@
 </div>
 
 <a href="#" class="top-up"><img src="img/top.png"></a>
-
+<a href="#" class="scrollToTop">Scroll To Top</a>
+<style>
+.scrollToTop{
+    width:100px; 
+    height:130px;
+    padding:10px; 
+    text-align:center; 
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position:fixed;
+    bottom:75px;
+    right:40px;
+    display:none;
+    background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+</style>
  <script type="text/javascript" src="js/default-assets/backtotop.js"></script>
 <script src="./OwlCarousel/dist/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
@@ -133,6 +152,26 @@ function openCity(cityName,elmnt,color) {
   document.getElementById(cityName).style.display = "block";
 }
 document.getElementById("defaultOpen").click();
+</script>
+<script>
+$(document).ready(function(){
+    
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+    
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+    
+});
 </script>
 </body>
 </html>
