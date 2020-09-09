@@ -2254,50 +2254,12 @@
 <a href="#" class="back-category"> <p><img src="img/back.png">Trở về danh mục</p></a>
 <a href="#" class="top-up"><img src="img/top.png"></a>
 <!-- FOOTER -->
-<a href="#" class="scrollToTop">Scroll To Top</a>
-<style>
-.scrollToTop{
-    width:100px; 
-    height:130px;
-    padding:10px; 
-    text-align:center; 
-    background: whiteSmoke;
-    font-weight: bold;
-    color: #444;
-    text-decoration: none;
-    position:fixed;
-    bottom:75px;
-    right:40px;
-    display:none;
-    background: url('arrow_up.png') no-repeat 0px 20px;
-}
-.scrollToTop:hover{
-    text-decoration:none;
-}
+
 </style>
  <script type="text/javascript" src="js/default-assets/backtotop.js"></script>
 <script src="./OwlCarousel/dist/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/default-assets/custom-tr.js"></script>
-<script>
-$(document).ready(function(){
-    
-    //Check to see if the window is top if not then display button
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-    
-    //Click event to scroll to top
-    $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
-    });
-    
-});
-</script>
+
 </body>
 </html>

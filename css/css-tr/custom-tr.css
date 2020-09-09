@@ -5765,6 +5765,7 @@ color: #000000;
 }
 .detail-box .item:last-child {
   border-right: none;
+  width: 33.333333%;
 }
 .detail-box .item .img-sm {
   width: 75px;
