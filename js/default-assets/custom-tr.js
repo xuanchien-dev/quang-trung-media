@@ -1,4 +1,69 @@
-function openCity(cityName) {
+/* js slider chi tiết sản phẩm */
+$(".box-img-nano").on('click', '.box-img', function(){
+  var idElm = $(this).attr('data-id');
+  if(idElm == undefined){
+    return false;
+  }
+  var indexElm = $(this).index();
+  indexElm = parseInt(indexElm) + 1;
+  console.log(indexElm)
+  $(".box-preview").find(".slick-dots").find('li:nth-child(' + indexElm + ')').click();
+  $(".box-img-nano").find('.box-img').removeClass('active');
+  $(this).addClass('active');
+  
+});
+$(".box-preview").on('click', '.box-img-preview', function(){
+  var dataSilde = $(this).attr('data-slide');
+  if(dataSilde == undefined){
+    return false;
+  }
+  var elm = '.main-overlay-slick[data-name=' + dataSilde + ']';
+  $(elm).addClass('active')
+  $(".box-overlay").removeClass('hide');
+  $(".box-overlay .icon-close-overlay").attr('data-slide', dataSilde);
+  setTimeout(function(){
+    setSlick(elm);
+    $(".box-overlay").animate({
+      'opacity' : '1'
+    });
+  },50)
+})
+$(".box-overlay .icon-close-overlay").click(function(){
+  var dataSilde = $(this).attr('data-slide');
+  if(dataSilde == undefined){
+    return false;
+  }
+  var elm = '.main-overlay-slick[data-name=' + dataSilde + ']';
+  $(elm).removeClass('active')
+  unSlick(elm);
+  $(".box-overlay").addClass('hide').css({'opacity' : ''});
+})
+$(document).ready(function(){
+  setSlick('.box-preview')
+  setTimeout(function(){
+    $(".box-img-nano").find(".box-img.default-view").click();
+  },50)
+})
+
+function setSlick(elm){
+  $(elm).slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow:"<button class='prev slick-prev'><img class='left-arrow ' src='img/left.png'></button>",
+    nextArrow:"<button class='next slick-next'><img class='right-arrow ' src='img/right.png'></button>",
+  });
+}
+
+function unSlick(elm){
+  $(elm).slick('unslick')
+}
+
+/**/
+
+/*function openCity(cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -7,35 +72,35 @@ function openCity(cityName) {
     document.getElementById(cityName).style.display = "block";
   }
 document.getElementById("defaultOpen").click();
+*/
 $(document).on('ready', function() {
 	new WOW().init();
 
-      $(".map-slider").slick({
-        lazyLoad: 'ondemand',
-      /*  infinite: true,*/
-        prevArrow:"<span class='prev'></span>",
-        nextArrow:"<span class='next'></span>",
-      });
+  $(".map-slider").slick({
+    lazyLoad: 'ondemand',
+    prevArrow:"<span class='prev'></span>",
+    nextArrow:"<span class='next'></span>",
+  });
 
-      $(".regular").slick({
-        dots: true,
-        infinite: true,
-        margin:30,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        autoplay: true,
-        prevArrow:"<button class='prev slick-prev'><img class='left-arrow ' src='img/left.png'></button>",
-        nextArrow:"<button class='next slick-next'><img class='right-arrow ' src='img/right.png'></button>",
-        responsive:[{
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true
-          }
-        }]
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    margin:30,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    prevArrow:"<button class='prev slick-prev'><img class='left-arrow ' src='img/left.png'></button>",
+    nextArrow:"<button class='next slick-next'><img class='right-arrow ' src='img/right.png'></button>",
+    responsive:[{
+    breakpoint: 576,
+    settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true
+  }
+  }]
 
-      });
+});
 
 
     $(".map-slider-footer").slick({
@@ -126,26 +191,7 @@ $(document).on('ready', function() {
       focusOnSelect: true,
       autoplay: false,
     });
-    /*
-    $('.slider-for-map').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav-map'
-      });
-      $('.slider-nav-map').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for-map',
-      dots: false,
-      centerMode: false,
-      focusOnSelect: true,
-      autoplay: false,
-      prevArrow:"<button class='prev-map slick-prev'><img class='left-map-arrow ' src='img/leftmap.png'></button>",
-          nextArrow:"<button class='next-map slick-next'><img class='right-map-arrow ' src='img/rightmap.png'></button>",
-      });*/
-      
+    
     $(".humburger").click(function () {
           $(".list-menu-mobile").fadeToggle("slow");
       });
@@ -210,3 +256,4 @@ $(document).on('ready', function() {
             });
         };
     });
+  

@@ -919,90 +919,79 @@
 <div class="detail-pro-page7">
     <div class="container">
         <div class="row">
-            
-            <div class="col-md-4 ctsp-box">
-                <div id="g1" class="tabcontent">
-                  <a href="" class="" title="" data-toggle="modal" data-target="#gallery-1"><img src="img/chitietsp1.png"></a>
-                    <div class="modal fade" id="gallery-1" role="dialog">
-                        <div class="modal-dialog">
-                    
-                      <!-- Modal content-->
-                      <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="slider-g1">
-                                <div class="item">
-                                    <img src="img/chitietsp1.png" alt="">
-                                </div>
-                                <div class="item">
-                                    <img src="img/pr1.png" alt="">
-                                </div>
-                            </div>
+            <div class="col-md-4 detail-pro-element">
+                <div class="box-preview">
+                    <div class="box-img-preview" id="img_prv_1" data-slide="silde_1">
+                        <img src="img/chitietsp1.png" alt="Preview">
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                      
-                        </div>
+                    <div class="box-img-preview" id="img_prv_2" data-slide="silde_2">
+                        <img src="img/pr1.png" alt="Preview">
+                    </div>
+                    <div class="box-img-preview box-video-preview" id="img_prv_3" data-slide="silde_3">
+                        <img src="img/pr2.png" alt="Preview">
                     </div>
                 </div>
-
-                <div id="g2" class="tabcontent">
-                  <a href="" class="" title="" data-toggle="modal" data-target="#gallery-2"><img src="img/pr1.png"></a>
-                      <div class="modal fade" id="gallery-2" role="dialog">
-                            <div class="modal-dialog">
-                        
-                          <!-- Modal content-->
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="slider-g1">
-                                    <div class="item">
-                                        <img src="img/chitietsp1.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="img/pr1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                          </div>
-                          
-                            </div>
+                <div class="box-img-nano">
+                    <div class="box-flex">
+                        <div class="box-img default-view" data-id="img_prv_1">
+                            <img src="img/chitietsp1.png" alt="">
                         </div>
-                </div>
-
-                <div id="g3" class="tabcontent">
-                    <a href="" class="" title="" data-toggle="modal" data-target="#video-2"><img src="img/pr2.png"></a>
-                    <div class="modal fade" id="video-2" role="dialog">
-                        <div class="modal-dialog">
-                        
-                          <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="box-video">
-                                        <div class="item">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/T1-r_feNNnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                          
+                        <div class="box-img" data-id="img_prv_2">
+                            <img src="img/pr1.png" alt="">
+                        </div>
+                        <div class="box-img box-video" data-id="img_prv_3">
+                            <img src="img/pr2.png" alt="">
+                        </div>
+                        <div class="boximg-text">
+                            <a href="#technical-data" class="tskt-link">Thông số kĩ thuật</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="img-choose">
-                    <a class="tablink" onclick="openCity('g1')" id="defaultOpen"><img src="img/chitietsp1.png"></a>
-                    <a class="tablink" onclick="openCity('g2')"><img src="img/pr1.png"></a>
-                    <a class="tablink tablinkvideo" onclick="openCity('g3')"><img src="img/pr2.png"></a>
-                    <a class="btn-tskt-s1" href="#thongsosanpham" title="">Thông số kỹ thuật</a>
                 </div>
             </div>
+            <div class="box-overlay-element box-overlay hide">
+                <div class="box-bg-overload"></div>
+                <div class="icon-close-overlay">
+                    <img src="img/closepr.png" alt="">
+                </div>
+                <div class="main-overlay-slick" data-name="silde_1">
+                    <div class="box-img-preview">
+                        <img src="img/1_full.png" alt="Preview">
+                    </div>
+                    <div class="box-img-preview">
+                        <img src="./assets/images/2_full.png" alt="Preview">
+                    </div>
+                    <div class="box-img-preview">
+                        <img src="img/3_full.png" alt="Preview">
+                    </div>
+                </div>
+
+                <div class="main-overlay-slick" data-name="silde_2">
+                    <div class="box-img-preview">
+                        <img src="img/1_2_full.png" alt="Preview">
+                    </div>
+                    <div class="box-img-preview">
+                        <img src="img/2_2_full.png" alt="Preview">
+                    </div>
+                    <div class="box-img-preview">
+                        <img src="img/3_2_full.png" alt="Preview">
+                    </div>
+                </div>
+
+                <div class="main-overlay-slick" data-name="silde_3">
+                    <div class="box-img-preview">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T1-r_feNNnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="box-img-preview">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T1-r_feNNnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="box-img-preview">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T1-r_feNNnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+           
+
             <div class="col-md-5 pro-detail-7">
                 <p><strong> Mã sản phẩm: </strong>SL - 400 </p>
                 <div class="price-7">
@@ -1993,7 +1982,7 @@
 
                 
             </div>
-            <div class="col-md-4 detail-pr-right" id="thongsosanpham">
+            <div class="col-md-4 detail-pr-right" id="technical-data">
                 <div class="techni-item">
                     <div class="title-techni">
                         <p>Thông số kỹ thuật:</p>
