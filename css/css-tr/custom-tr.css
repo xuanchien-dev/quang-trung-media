@@ -2089,8 +2089,6 @@ color: #000000;
   color: #000000;
   margin-top: 20px;
   margin-bottom: 20px;
-      padding-left: 70px;
-    padding-right: 75px;
     text-transform: uppercase;
 }
 .content-introduce h2 span {
@@ -2101,7 +2099,7 @@ color: #000000;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 30px;
 }
 .content-introduce p span {
   color: #318124;
@@ -2191,7 +2189,7 @@ color: #000000;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 30px;
     text-align: right;
     color: #000000;
         margin-top: 50px;
@@ -2243,7 +2241,7 @@ color: #000000;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 30px;
   color: #000000;
 }
 
@@ -4237,9 +4235,11 @@ color: #000000;
   z-index: -3;
   background: linear-gradient(90deg, rgba(49, 129, 36, 0.98) 62.71%, rgba(49, 129, 36, 0.686) 99.48%);
 }
-
+.img-footer{
+  padding-left: 12px;
+}
 .footer-address {
-  padding-left: 0;
+  padding-left: 25px;
   margin-top: 25px;
 }
 .footer-address li {
@@ -4282,6 +4282,9 @@ color: #000000;
   line-height: 16px;
   color: #FFFFFF;
 }
+.list-footer-1 ul{
+  margin-bottom: 30px;
+}
 .list-footer-1 ul {
   padding-left: 0;
 }
@@ -4289,7 +4292,7 @@ color: #000000;
   list-style: none;
 }
 .list-footer-1 ul li a {
-  color: #9AFFB0;
+  color: #fff;
 }
 .list-footer-1 ul li a:hover {
   color: #fff;
@@ -5266,6 +5269,7 @@ color: #000000;
   margin-top: 11px;
   margin-bottom: 7px;
   padding-left: 50px;
+  margin: 20px 0px;
 }
 .list-cate a:hover {
   text-decoration: none;
@@ -5401,6 +5405,8 @@ color: #000000;
   padding-right: 10px;
   display: inline-block;
   width: 100%;
+  padding-top: 10px;
+    padding-bottom: 10px;
 }
 .cate1 .title-cate {
   background: #F2F2F2;
@@ -5431,6 +5437,10 @@ color: #000000;
   line-height: 16px;
   color: #000000;
   letter-spacing: 0;
+  margin-top: 15px;
+}
+.cate1 label:nth-child(1), .cate1 label:nth-child(2) {
+    margin-top: 0px;
 }
 .cate1 label input {
   margin-right: 10px;
@@ -5633,6 +5643,7 @@ color: #000000;
 }
 .slider-cate-item{
   padding-left: 0px;
+  padding-right: 0px;
 }
 .slider-cate-item .title-cate-pr {
   margin-bottom: 20px;
@@ -9142,4 +9153,8 @@ test*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.list_cate ul li a:hover img{
+  src:img/hover2;
 }
