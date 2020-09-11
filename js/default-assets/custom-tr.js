@@ -1,17 +1,4 @@
-/* js slider chi tiết sản phẩm */
-$(".box-img-nano").on('click', '.box-img', function(){
-  var idElm = $(this).attr('data-id');
-  if(idElm == undefined){
-    return false;
-  }
-  var indexElm = $(this).index();
-  indexElm = parseInt(indexElm) + 1;
-  console.log(indexElm)
-  $(".box-preview").find(".slick-dots").find('li:nth-child(' + indexElm + ')').click();
-  $(".box-img-nano").find('.box-img').removeClass('active');
-  $(this).addClass('active');
-  
-});
+
 $(".box-preview").on('click', '.box-img-preview', function(){
   var dataSilde = $(this).attr('data-slide');
   if(dataSilde == undefined){
@@ -52,27 +39,32 @@ function setSlick(elm){
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow:"<button class='prev slick-prev'><img class='left-arrow ' src='img/left.png'></button>",
-    nextArrow:"<button class='next slick-next'><img class='right-arrow ' src='img/right.png'></button>",
   });
 }
 
 function unSlick(elm){
+  //'.main-overlay-slick'
   $(elm).slick('unslick')
 }
 
+ $('.box-preview').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.box-flex'
+});
+$('.box-flex').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.box-preview',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+
 /**/
 
-/*function openCity(cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    document.getElementById(cityName).style.display = "block";
-  }
-document.getElementById("defaultOpen").click();
-*/
 $(document).on('ready', function() {
 	new WOW().init();
 
