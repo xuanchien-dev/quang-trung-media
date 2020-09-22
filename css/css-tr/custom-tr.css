@@ -9343,6 +9343,8 @@ test*/
 
 .chitiet-thongtin{
   margin: 20px 0;
+  border: 1px solid grey;
+    border-radius: 5px;
 }
 .chitiet-thongtin h5{
   text-align: center;
@@ -9353,7 +9355,6 @@ test*/
 
 }
 .chitiet-box{
-      border: 1px solid #34343470;
     border-radius: 5px;
     display: none;
 }
@@ -9397,4 +9398,34 @@ test*/
 }
 .chitiet-address li .text p a:hover{
   color: #308123;
+}
+.themangxahoi{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.themangxahoi .top{
+  display: flex;
+  align-items: center;
+}
+.themangxahoi .top p{
+ margin-right: 30px;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+.themangxahoi .bottom p:first-child span img{
+ transform: rotateZ(-45deg);
+}
+.themangxahoi .top p a{
+ margin-right: 15px;
+ margin-left: 10px;
+}
+.themangxahoi .bottom p{
+ margin-top: 0;
+ margin-bottom: 0;
+}
+.themangxahoi .bottom p span{
+  font-weight: bold;
+}
+.themangxahoi .bottom p span img{
+ margin-right: 10px;
 }
