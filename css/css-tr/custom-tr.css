@@ -9344,6 +9344,9 @@ test*/
 .chitiet-thongtin{
   margin: 20px 0;
 }
+.chitiet-thongtin h5{
+  text-align: center;
+}
 .chitiet-thongtin h5 img{
   margin-left: 10px;
   transform: rotateZ(90deg);
@@ -9385,4 +9388,13 @@ test*/
 .chitiet-address li i {
   color: #9AFFB0;
   font-size: 22px;
+}
+.chitiet-address li .text p{
+  margin: 0;
+}
+.chitiet-address li .text p a{
+  color: #343434;
+}
+.chitiet-address li .text p a:hover{
+  color: #308123;
 }
