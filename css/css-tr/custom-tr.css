@@ -7901,7 +7901,7 @@ test*/
 .top-up{
   position: fixed;
   bottom: 20px;
-  right: 18%;
+  right: 10%;
   border: none;
   outline: none;
   cursor: pointer;
@@ -9160,7 +9160,7 @@ test*/
 }
 
 
-/* video san pham */
+/* video san pham 22/09*/
 .video-detail-product .video-content{
   display: flex;
   justify-content: space-between;
@@ -9245,4 +9245,144 @@ test*/
   border-top: none;
   background: #80808024;
   padding: 15px;
+}
+/* thanh cố định chứa thông tin sản phẩm */
+.detail-fixed-pro{
+  width: 100% !important;
+  background: #fff;
+  border-bottom: 1px solid grey;
+  background: #fff;
+  z-index: 100;
+}
+.detail-fixed-element{
+  display: inline-block;
+  width: 100%;
+  padding-top: 5px;
+}
+.detail-fixed-pro .title{
+  text-align: left;
+  padding: 0 15px;
+  float: left;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+  padding-top: 8px;
+}
+.detail-fixed-pro .title p{
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ff3c19;
+  margin: 0;
+}
+.detail-fixed-pro .title p span{
+  font-family: Roboto;
+  font-size: 14px;
+  color: #343434;
+  margin: 0 0 0 15px;
+  text-decoration: line-through;
+}
+.detail-fixed-pro .title h5{
+  margin: 0;
+  widows: 60%;
+}
+.detail-fixed-pro .title h5 a{
+  font-family: Roboto;
+  font-size: 16px;
+  color: #343434;
+}
+.detail-fixed-pro .button-ht{
+  float: left;
+  display: flex;
+   width: 50%;
+   justify-content: flex-end;
+}
+.detail-fixed-pro .button-ht .btn-d{
+  width: 150px;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 15px;
+}
+.detail-fixed-pro .button-ht .btn-tgh{
+  background: #ff3c19;
+}
+.detail-fixed-pro .button-ht .btn-tv{
+  background: #308123;
+}
+.icon-link-f {
+  position: fixed;
+  right: 10%;
+  outline: none;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #6EA820;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 99;
+}
+.icon-link-f img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-1 {
+  bottom: 160px;
+}
+
+.icon-2 {
+  bottom: 220px;
+}
+
+.icon-3 {
+  bottom: 280px;
+}
+
+.chitiet-thongtin{
+  margin: 20px 0;
+}
+.chitiet-thongtin h5 img{
+  margin-left: 10px;
+  transform: rotateZ(90deg);
+
+}
+.chitiet-box{
+      border: 1px solid #34343470;
+    border-radius: 5px;
+    display: none;
+}
+.chitiet-address {
+  padding-left: 15px;
+  margin-top: 15px;
+}
+.chitiet-address li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+}
+.chitiet-address li p {
+    color: #343434;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 30px;
+}
+.chitiet-address li span {
+  width: 6%;
+  float: left;
+  margin-right: 3%;
+}
+.chitiet-address li span img{
+ max-width: 60%;
+}
+.chitiet-address li .text {
+  display: inline-block;
+  float: left;
+  width: 90%;
+}
+.chitiet-address li i {
+  color: #9AFFB0;
+  font-size: 22px;
 }

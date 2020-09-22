@@ -36,9 +36,9 @@ $(function() {
     $(this).addClass("active-click");
   });
 
-  $(".text").click(function(){
+  /*$(".text").click(function(){
     $(this).css("display","none");
-  });
+  });*/
   $('.block__title').click(function(event) {
     if($('.block').hasClass('one')){
       $('.block__title').not($(this)).removeClass('active');

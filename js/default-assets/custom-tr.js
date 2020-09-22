@@ -249,3 +249,63 @@ $(document).on('ready', function() {
         };
     });
   
+/* menu co dinh */
+jQuery(document).ready(function($) {
+  var $filter = $('header');
+  var $filterSpacer = $('<div />', {
+    "class": "vnkings-spacer",
+    "height": $filter.outerHeight()
+  });
+  if ($filter.size())
+  {
+    $(window).scroll(function ()
+    {
+      if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top)
+      {
+        $filter.before($filterSpacer);
+        $filter.addClass("fix");
+      }
+      else if ($filter.hasClass('fix')  && $(window).scrollTop() < $filterSpacer.offset().top)
+      {
+        $filter.removeClass("fix");
+        $filterSpacer.remove();
+      }
+    });
+  }
+});
+
+jQuery(window).scroll(function (){
+  jQuery(".category-page").css("position","fixed");
+  jQuery(".category-page").css("top","140px");
+  jQuery(".category-page").css("width","252px");
+});
+
+ 
+document.addEventListener("DOMContentLoaded",function() {
+    window.addEventListener("scroll",function(){
+        var x = pageYOffset;
+        if(x < 300){
+            jQuery(".category-page").css("position","inherit");
+            jQuery(".category-page").css("top","0px");
+        }
+    })
+});
+jQuery(window).scroll(function (){
+  jQuery(".detail-fixed-pro").css("position","fixed");
+  jQuery(".detail-fixed-pro").css("top","140px");
+  jQuery(".detail-fixed-pro").css("width","252px");
+});
+
+ 
+document.addEventListener("DOMContentLoaded",function() {
+    window.addEventListener("scroll",function(){
+        var x = pageYOffset;
+        if(x < 300){
+            jQuery(".detail-fixed-pro").css("position","inherit");
+            jQuery(".detail-fixed-pro").css("top","0px");
+        }
+    })
+});
+$(".chitiet-thongtin h5").click(function () {
+  $(".chitiet-box").fadeToggle("slow");
+});
