@@ -309,3 +309,6 @@ document.addEventListener("DOMContentLoaded",function() {
 jQuery(".chitiet-thongtin h5").click(function () {
   jQuery(".chitiet-box").fadeToggle("slow");
 });
+jQuery(".v-item").click(function () {
+  jQuery(this).find(".video-v").fadeToggle("slow");
+});
